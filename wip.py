@@ -32,12 +32,24 @@ def get_list_of_trails(latitude, longitude, distance=10):
 
     return dict_of_trails.keys()
 
+
 def get_attributes_of_trails(trail_id):
+    """Make a request to get the attributes for specified trail_id."""
     # r = requests.get("https://api.transitandtrails.org/api/v1/trailheads/<trail_id>/attributes", params={
     # "key": key})
 
-    trail_id = dict_of_trails[name][trail_id]
+    # trail_id = dict_of_trails[name][trail_id]
     link = "https://api.transitandtrails.org/api/v1/trailheads/%i/attributes" % (trail_id)
     r = requests.get(link, params={"key": key})
     attributes = r.json()
-    ## returned: <bound method Response.json of <Response [200]>>
+    return attributes
+
+
+def get_photos_of_trails(trail_id):
+    """Make a request to get photos for specified trail_id."""
+
+    # trail_id = dict_of_trails[name][trail_id]
+    link = "https://api.transitandtrails.org/api/v1/trailheads/%i/photos" % (trail_id)
+    r = requests.get(link, params={"key": key})
+    photos = r.json()
+    return photos
