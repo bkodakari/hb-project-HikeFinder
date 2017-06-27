@@ -17,7 +17,7 @@ def get_list_of_trails(latitude, longitude, distance=10):
     # /api/v1/trailheads/[id]/photos
     # /api/v1/trailheads/[id]/maps
 
-    trails = r.json
+    trails = r.json()
 
     dict_of_trails = {}
 
@@ -39,4 +39,5 @@ def get_attributes_of_trails(trail_id):
     trail_id = dict_of_trails[name][trail_id]
     link = "https://api.transitandtrails.org/api/v1/trailheads/%i/attributes" % (trail_id)
     r = requests.get(link, params={"key": key})
+    attributes = r.json()
     ## returned: <bound method Response.json of <Response [200]>>
