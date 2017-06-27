@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "name": "Drinking Water",
+    "description": "Drinking water is available at this trailhead.",
+    "category": 2
+  },
+  {
+    "id": 2,
+    "name": "Restrooms",
+    "description": "There are restrooms at this trailhead.",
+    "category": 2
+  },
+  {
+    "id": 3,
+    "name": "Visitor Center",
+    "description": "There's a visitors center here, and they're itching to see your beautiful face. Take a peek inside and try to learn something new!",
+    "category": 2
+  },
+  {
+    "id": 4,
+    "name": "Parking",
+    "description": "There is car parking at this trailhead.",
+    "category": 2
+  },
+  {
+    "id": 5,
+    "name": "Mountain Biking",
+    "description": "It is possible to mountain bike on trails that start at this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 6,
+    "name": "Accessible Restrooms",
+    "description": "Bathrooms that are ADA compliant.",
+    "category": 5
+  },
+  {
+    "id": 9,
+    "name": "Snowshoeing",
+    "description": "There is snowshoeing from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 10,
+    "name": "X-Country Skiing",
+    "description": "There is cross-country skiing from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 11,
+    "name": "Hiking",
+    "description": "There is trail hiking from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 12,
+    "name": "Swimming",
+    "description": "Swimming is accessible from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 13,
+    "name": "Kayaking",
+    "description": "Kayaking is possible from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 14,
+    "name": "Off Street Biking",
+    "description": "Off road bicycling is accessible from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 15,
+    "name": "Climbing",
+    "description": "Rock climbing is accessible from this trailhead.",
+    "category": 3
+  },
+  {
+    "id": 16,
+    "name": "Campground",
+    "description": "Campgrounds are accessible from this trailhead.",
+    "category": 2
+  },
+  {
+    "id": 17,
+    "name": "Birding",
+    "description": "There is exceptional birding areas along trails accessible from this trailhead. Perfect spot to observe birds in their natural habitats - binoculars helpful, but not necessary!",
+    "category": 3
+  },
+  {
+    "id": 18,
+    "name": "Primary Park Entrance",
+    "description": "This trailhead is a primary park entrance.",
+    "category": 2
+  },
+  {
+    "id": 20,
+    "name": "Trail Running",
+    "description": "Unpaved trails that are great for trail running.",
+    "category": 3
+  },
+  {
+    "id": 21,
+    "name": "Fishing",
+    "description": "Fishing opportunities accessible from this trailhead",
+    "category": 3
+  },
+  {
+    "id": 22,
+    "name": "Picnic Tables",
+    "description": "Picnic tables are at or near this trailhead.",
+    "category": 2
+  },
+  {
+    "id": 23,
+    "name": "Accessible Parking",
+    "description": "• Identified by the international access symbol and has an adjoining access aisle\t \r\n• Located on a firm and stable surface\r\n• Level or slope not greater than 1:12 \r\n",
+    "category": 5
+  },
+  {
+    "id": 24,
+    "name": "Scenic Overlook",
+    "description": "There are places accessible and nearby this trailhead that have exceptional views. ",
+    "category": 3
+  },
+  {
+    "id": 25,
+    "name": "Accessible Pier",
+    "description": "A handicap-friendly pier is readily available at no inconvenience to you. Look for the signs!",
+    "category": 5
+  },
+  {
+    "id": 26,
+    "name": "Benches",
+    "description": "Benches for sitting either at or near the trailhead",
+    "category": 2
+  },
+  {
+    "id": 27,
+    "name": "Accessible Picnic Area",
+    "description": "• Path of travel to table is firm and stable \r\n• Located on a level, firm and stable surface\t\t\t\r\n• At least 27\" knee clearance \r\n• Seating is at either the end of the table or on the sides\r\n",
+    "category": 5
+  },
+  {
+    "id": 28,
+    "name": "Dirt",
+    "description": "The trails leading from this location are primarily dirt paths. ",
+    "category": 4
+  },
+  {
+    "id": 29,
+    "name": "Gravel",
+    "description": "The trails leading from this location are primarily gravel. ",
+    "category": 4
+  },
+  {
+    "id": 30,
+    "name": "Paved",
+    "description": "The trail(s) leading from from trailhead are primarily paved.",
+    "category": 4
+  },
+  {
+    "id": 31,
+    "name": "Accessible Trail",
+    "description": "Clear tread width: 36\" minimum\r\nTread Obstacles: 2\" high maximum (up to 3\" high where running and cross slopes are 5% or less)\r\nCross Slope: 5% max.\r\nNo more than 30% of the total trail length may exceed a running slope of 8.33%.\r\nPassing Space: provided at least every 1000' where trail width is less than 60\"\r\nSigns: shall be provided indicating the length of the accessible trail segment.",
+    "category": 5
+  },
+  {
+    "id": 32,
+    "name": "Pier",
+    "description": "There is a pier here. Let your feet dangle off the edge as you watch the sun slip away into the ocean at dusk… mmm.",
+    "category": 2
+  },
+  {
+    "id": 33,
+    "name": "San Francisco Bay Trail",
+    "description": "This trailhead is along the San Francisco Bay Trail. The San Francisco Bay Trail is a bicycle and pedestrian trail that will eventually allow continuous travel around the shoreline of San Francisco Bay. As of 2012, approximately 325 miles (523 km) of trail have been completed. When finished, the Bay Trail will extend over 500 miles (805 km) to link the shoreline of nine counties, passing through 47 cities and crossing seven toll bridges. It is a project of the Association of Bay Area Governments. Read more at http://www.baytrail.org/",
+    "category": 10
+  },
+  {
+    "id": 34,
+    "name": "Bay Area Ridge Trail",
+    "description": "This trailhead is along the Bay Area Ridge Trail. The Bay Area Ridge Trail (Ridge Trail) is a planned 550+-mile multi-use trail (currently over 330 miles are complete) along the hill and mountain ridgelines ringing the San Francisco Bay Area, in Northern California. When complete, the trail will connect over 75 parks and open spaces. The trail is being designed to provide access for hikers, runners, mountain bicyclists, and equestrians. It will be accessible through trailheads near major population centers, while the trail will extend into more remote areas. The first trail section was dedication on May 13, 1989. Read more at http://ridgetrail.org/",
+    "category": 10
+  },
+  {
+    "id": 35,
+    "name": "California Coastal Trail",
+    "description": "This trailhead is along the California Coastal Trail. The California Coastal Trail (CCT) is a network of public trails for walkers, bikers, equestrians, wheelchair riders and others along the 1200-mile California coastline. As of May 2012, it is over halfway complete.  See more at http://www.californiacoastaltrail.info/cms/pages/main/index.html",
+    "category": 10
+  },
+  {
+    "id": 36,
+    "name": "San Francisco Bay Area Water Trail",
+    "description": "This trailhead is an access point for the Bay Area Water Trail. The Water Trail is a network of access sites (or “trailheads”) that will enable people using non-motorized, small boats or other beachable sailcraft, such as kayaks, canoes, dragon boats, stand up paddle and windsurf boards, to safely enjoy single and multiple-day trips around San Francisco Bay. ",
+    "category": 10
+  },
+  {
+    "id": 37,
+    "name": "Juan Bautista de Anza Historic Trail",
+    "description": "The Juan Bautista de Anza National Historic Trail is a 1,210-mile (1,950 km). The trail route extends from Nogales on the U.S.-Mexico border in Arizona, through the California desert and coastal areas in Southern California and the Central Coast region to San Francisco.",
+    "category": 10
+  },
+  {
+    "id": 38,
+    "name": "Closed",
+    "description": "This trailhead is currently closed, probably due to maintenance or construction. Try back another time, or check out the trailhead's website for more details about the closure.",
+    "category": 11
+  },
+  {
+    "id": 39,
+    "name": "National Recreational Trail",
+    "description": "A national trail system comprised of National Recreation Trails, National Scenic Trails and National Historic Trails. See more info here: http://www.americantrails.org/nationalrecreationtrails/",
+    "category": 10
+  },
+  {
+    "id": 40,
+    "name": "Telephone",
+    "description": "There is a telephone available, but it probably requires a little money to use. Bring coins.",
+    "category": 2
+  },
+  {
+    "id": 41,
+    "name": "Trailer Parking",
+    "description": "Good news! These parking lots are trailer-friendly. Note: this does not guarantee hook-ups for your trailer - check the trailhead description for more info!",
+    "category": 2
+  },
+  {
+    "id": 42,
+    "name": "Walk-in Access Only",
+    "description": "Narrow paths and other barriers prohibit vehicles from reaching the destination. The trailhead is only accessible by hiking or walking in.",
+    "category": 2
+  },
+  {
+    "id": 43,
+    "name": "Horseback Riding",
+    "description": "This trailhead has designated horse trails and areas. Check the park's website for more information on their specific rules.",
+    "category": 2
+  },
+  {
+    "id": 44,
+    "name": "No Dogs Allowed",
+    "description": "Sorry, no dogs allowed. A major bummer for your k-9 friends, but them are the park rules!",
+    "category": 2
+  },
+  {
+    "id": 45,
+    "name": "Dogs Allowed On-leash",
+    "description": "Dogs permitted, but only on a leash. They must be obedient and within owner's range at all times. Check the park's website for more info on their specific rules.",
+    "category": 2
+  },
+  {
+    "id": 46,
+    "name": "Dogs Allowed Off-leash",
+    "description": "Dogs permitted to roam freely off leashes, though they must be obedient and within owner's range at all times. Check the park's website for more info on their specific rules.",
+    "category": 2
+  },
+  {
+    "id": 47,
+    "name": "Beach",
+    "description": "There is a beach here for you to enjoy. 'Nuff said. Check the park's website for their specific rules! ",
+    "category": 2
+  },
+  {
+    "id": 48,
+    "name": "Sand",
+    "description": "In places, this trailhead is sand. Sink your toes in, and enjoy the view!",
+    "category": 4
+  },
+  {
+    "id": 49,
+    "name": "Horseback Riding",
+    "description": "This trailhead has designated horse trails and areas. Check the park's website for more information on their specific rules.",
+    "category": 3
+  },
+  {
+    "id": 50,
+    "name": "Bike Friendly",
+    "description": "Bicycles permitted on the grounds. Note: just because this trailhead is bike friendly, that doesn't always guarantee that there are designated bike racks closeby. ",
+    "category": 6
+  },
+  {
+    "id": 51,
+    "name": "Transit Accessible",
+    "description": "Transit stop(s) are within walking distance of this trailhead.",
+    "category": 6
+  },
+  {
+    "id": 52,
+    "name": "Car (Drive up)",
+    "description": "Road access allows cars to drive up to the destination/start of the trailhead. Note: this does not guarantee close parking.",
+    "category": 6
+  },
+  {
+    "id": 53,
+    "name": "Road Biking",
+    "description": "Road cycling is a popular activity here. There are many paved roads for you to enjoy... as long as you have a helmet!",
+    "category": 3
+  },
+  {
+    "id": 1053,
+    "name": "Guadalupe River Trail",
+    "description": "The Guadalupe River Trail is a core trail system within San Jose's trail network.  Once fully developed, it will extend about 20 miles and link the San Francisco Bay to south San Jose.",
+    "category": 10
+  },
+  {
+    "id": 1054,
+    "name": "SC Transit Accessible ",
+    "description": "Is this feature transit accessible via Sonoma County Transit?",
+    "category": 6
+  },
+  {
+    "id": 1055,
+    "name": "YARTS",
+    "description": "Temporarily used for YARTS project. ",
+    "category": 6
+  }
+]

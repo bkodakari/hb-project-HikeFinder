@@ -1,0 +1,68 @@
+[
+  {
+    "id": 31,
+    "name": "Accessible Trail",
+    "category": 5,
+    "category_name": "Barrier Free (limited mobility)"
+  },
+  {
+    "id": 6,
+    "name": "Accessible Restrooms",
+    "category": 5,
+    "category_name": "Barrier Free (limited mobility)"
+  },
+  {
+    "id": 23,
+    "name": "Accessible Parking",
+    "category": 5,
+    "category_name": "Barrier Free (limited mobility)"
+  },
+  {
+    "id": 30,
+    "name": "Paved",
+    "category": 4,
+    "category_name": "Surface"
+  },
+  {
+    "id": 28,
+    "name": "Dirt",
+    "category": 4,
+    "category_name": "Surface"
+  },
+  {
+    "id": 27,
+    "name": "Accessible Picnic Area",
+    "category": 5,
+    "category_name": "Barrier Free (limited mobility)"
+  },
+  {
+    "id": 35,
+    "name": "California Coastal Trail",
+    "category": 10,
+    "category_name": "Regional Trail"
+  },
+  {
+    "id": 18,
+    "name": "Primary Park Entrance",
+    "category": 2,
+    "category_name": "Amenities"
+  },
+  {
+    "id": 2,
+    "name": "Restrooms",
+    "category": 2,
+    "category_name": "Amenities"
+  },
+  {
+    "id": 4,
+    "name": "Parking",
+    "category": 2,
+    "category_name": "Amenities"
+  },
+  {
+    "id": 22,
+    "name": "Picnic Tables",
+    "category": 2,
+    "category_name": "Amenities"
+  }
+]
