@@ -47,6 +47,12 @@ def get_local_hikes():
 def trail_info():
     pass
 
+
+@app.route("/geocode")
+def geocoding():
+
+    return render_template("geocode.html")
+
 # @app.route("/users")
 # def user_list():
 #     """Show list of users."""
