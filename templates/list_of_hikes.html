@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 
-Put list of hikes here
-
+    <h2>Trails Near You</h2>
+    <ul>
+      {% for trail in dict_of_trails %}
+        <li>
+          <a href="/trails/{{ dict_of_trails[trail][4] }}">{{ dict_of_trails[trail][0] }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
 {% endblock %}

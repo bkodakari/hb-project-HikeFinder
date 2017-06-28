@@ -29,19 +29,23 @@ def index():
     return render_template("homepage.html")
 
 
-@app.route("/local_hikes")
+@app.route("/local-hikes")
 def get_local_hikes():
     address = request.args.get("address")
     distance = request.args.get("distance")
-    print "##################", address, distance
+
     ### use google maps to convert address to latitude & longitude
     latitude = 37.7749
     longitude = -122.4194
-    get_list_of_trails(latitude, longitude)
+    dict_of_trails = get_list_of_trails(latitude, longitude)
+    print dict_of_trails
+
+    return render_template("list_of_hikes.html", dict_of_trails=dict_of_trails)
 
 
-    return render_template("list_of_hikes.html")
-
+@app.route("/trails")
+def trail_info():
+    pass
 
 # @app.route("/users")
 # def user_list():
