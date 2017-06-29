@@ -4,8 +4,9 @@ from jinja2 import StrictUndefined
 
 from flask import Flask, jsonify, render_template, redirect, request, flash, session
 from flask_debugtoolbar import DebugToolbarExtension
-from wip import get_list_of_trails
+from wip import get_list_of_trails, get_geocode
 from secrets import secret_key
+
 # from secrets.py import transit_and_trails_api_key as key
 
 #from model import User, Rating, Movie, connect_to_db, db
@@ -33,12 +34,12 @@ def index():
 def get_local_hikes():
     address = request.args.get("address")
     distance = request.args.get("distance")
+    # print address, distance
+    latitude, longitude = get_geocode(address)
+    # print latitude, longitude
 
-    ### use google maps to convert address to latitude & longitude
-    latitude = 37.7749
-    longitude = -122.4194
     dict_of_trails = get_list_of_trails(latitude, longitude)
-    print dict_of_trails
+    print dict_of_trails.keys()
 
     return render_template("list_of_hikes.html", dict_of_trails=dict_of_trails)
 

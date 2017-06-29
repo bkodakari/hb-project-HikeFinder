@@ -1,4 +1,28 @@
 
+#### ADDRESS INPUT FORM ####
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <form action="/local-hikes">
+        <input type="text" class="form-control" name="address" placeholder="Search for trails near...">
+        <input type="text" class="form-control" name="distance" placeholder="Search Radius - optional">
+        <span class="input-group-btn">
+          <button class="btn btn-default" id="submit" type="submit">Go!</button>
+        </span>
+      </form>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+google maps floating address bar
+    <div id="floating-panel">
+      <input id="address" type="textbox" value="Address">
+      <input id="submit" type="button" value="Geocode">
+    </div>
+
+
+
 <form>
   <div class="input-group input-group-lg">
     <span class="input-group-addon" id="sizing-addon1"></span>
