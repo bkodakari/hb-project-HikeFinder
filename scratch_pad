@@ -1,4 +1,32 @@
 
+#######################
+$('#856').data('lat');
+#######################
+
+
+GOOGLE MAPS STATIC MAP
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUcUHrh6UEkGE_Pn-XMqHwY_aftv8PJNU&callback=initMap">
+</script>
+<script>
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 37.7749, lng: -122.4194},
+    zoom: 8
+  });
+}
+</script>    
+
+
+
+##### GOOGLE MAPS FROM BASE
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUcUHrh6UEkGE_Pn-XMqHwY_aftv8PJNU&callback=initMap">
+    </script>
+  <!-- script src="static/mapping2.js"></script> -->
+
+
 #### ADDRESS INPUT FORM ####
 <div class="row">
   <div class="col-lg-6">

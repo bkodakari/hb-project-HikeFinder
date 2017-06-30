@@ -38,10 +38,11 @@ def get_local_hikes():
     latitude, longitude = get_geocode(address)
     # print latitude, longitude
 
-    dict_of_trails = get_list_of_trails(latitude, longitude)
+    dict_of_trails = get_list_of_trails(latitude, longitude, distance)
     print dict_of_trails.keys()
 
-    return render_template("list_of_hikes.html", dict_of_trails=dict_of_trails)
+    return render_template("list_of_hikes.html", dict_of_trails=dict_of_trails,
+                           lat=latitude, lng=-longitude)
 
 
 @app.route("/trails")
@@ -49,10 +50,6 @@ def trail_info():
     pass
 
 
-@app.route("/geocode")
-def geocoding():
-
-    return render_template("geocode.html")
 
 # @app.route("/users")
 # def user_list():

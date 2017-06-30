@@ -11,6 +11,8 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
+    <script src="https://code.jquery.com/jquery.js"></script>
+
     <link rel="stylesheet" href="static/stylesheet.css">
 
     <title>Hike Finder</title>
@@ -20,6 +22,8 @@
 
 
   <body>
+        <!-- <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a> -->
+    
  
     <div class="page-header">
       <h1>HIKE FINDER <small>Where Do You Want To Hike Today?</small></h1>
@@ -41,13 +45,6 @@
     {% for message in get_flashed_messages() %}
       <li> {{ message }}</li>
     {% endfor %}
-<!--     <div class="row">
-      <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-          <img src="..." alt="...">
-        </a>
-      </div>
-    </div> -->
 
     <hr>
 
@@ -55,15 +52,13 @@
 
     {% block content %} put your content here {% endblock %}
 
-
+<script src="static/mapping2.js"></script> 
     
-    <!-- <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a> -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUcUHrh6UEkGE_Pn-XMqHwY_aftv8PJNU&callback=initMap">
+</script>
 
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUcUHrh6UEkGE_Pn-XMqHwY_aftv8PJNU&callback=initMap">
-    </script>
-    <script src="static/mapping.js"></script>
+
 
   </body>
 </html>
