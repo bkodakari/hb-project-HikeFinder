@@ -34,12 +34,11 @@ def index():
 def get_local_hikes():
     address = request.args.get("address")
     distance = request.args.get("distance")
-    # print address, distance
+    print "######## in hike route", address, distance
     latitude, longitude = get_geocode(address)
     # print latitude, longitude
 
     dict_of_trails = get_list_of_trails(latitude, longitude, distance)
-    print dict_of_trails.keys()
 
     return render_template("list_of_hikes.html", dict_of_trails=dict_of_trails,
                            lat=latitude, lng=-longitude)

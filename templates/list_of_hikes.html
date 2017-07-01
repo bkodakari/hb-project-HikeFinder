@@ -5,11 +5,17 @@
     <ul>
       {% for trail in dict_of_trails %}
         <li>
-          <a href="/trails/{{ dict_of_trails[trail][4] }}" id="{{ dict_of_trails[trail][5] }}" data-lat="{{ dict_of_trails[trail][1] }}" data-lng="{{ dict_of_trails[trail][2] }}">{{ dict_of_trails[trail][0] }}</a>
+          <a href="/trails/{{ dict_of_trails[trail][4] }}" id="43{{ dict_of_trails[trail][5] }}" data-lat="{{ dict_of_trails[trail][1] }}" data-lng="{{ dict_of_trails[trail][2] }}">{{ dict_of_trails[trail][0] }}</a>
         </li>
       {% endfor %}
     </ul>    
 
-   
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUcUHrh6UEkGE_Pn-XMqHwY_aftv8PJNU">
+</script>
+<script src="static/mapping2.js"></script> 
 {% endblock %}
 
+
+<!-- for dict_of_trails[trail][5] in id.... how do I pass that to the id for the js marker? -->
+<!-- can i increment the id (arbitrary #)? if so, can I then loop over the marker function for the length of the list and increment the id there? -->
