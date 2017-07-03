@@ -38,7 +38,6 @@ def get_list_of_trails(latitude, longitude, distance=10):
     trails = r.json()
 
     dict_of_trails = {}
-    list_of_trail_ids = []
 
     for trail in trails:
         name = trail['name']
@@ -47,7 +46,6 @@ def get_list_of_trails(latitude, longitude, distance=10):
         description = trail['description']
         park_name = trail['park_name']
         trail_id = trail['id']
-        list_of_trail_ids += trail_id
         dict_of_trails[name] = [name, latitude, longitude, description, park_name, trail_id]
 
     return dict_of_trails

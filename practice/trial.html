@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- from google geocode -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <link rel="stylesheet" href="static/stylesheet.css">
+
+    <title>Hike Finder</title>
+
+  </head>
+
+
+
+  <body>
+
+    
+ 
+    <div>
+      <h1>HIKE FINDER</h1>
+      <h3>Where Do You Want To Hike Today?</h3>
+    </div>
+    
+<!--     {% if "current_user" in session %}
+      <form action="/logout">
+          <input type="submit" value="Logout">
+      </form>
+    {% else %}
+      <form action="/login">
+          <input type="submit" value="Login">
+      </form>
+    {% endif %} -->
+
+
+    <hr>
+
+    {% for message in get_flashed_messages() %}
+      <li> {{ message }}</li>
+    {% endfor %}
+
+    <hr>
+
+    <div id="map"></div>
+
+    {% block content %} put your content here {% endblock %}
+
+ 
+    <!-- <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a> -->
+  </body>
+</html>

@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
-    <!-- from google geocode -->
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-    <link rel="stylesheet" href="static/stylesheet.css">
-
-    <title>Hike Finder</title>
-
-  </head>
+<head>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="static/stylesheet.css">
+  <title>Hike Finder</title>
+</head>
 
 
+<body>
+  <div>
+    <h1>HIKE FINDER</h1>
+    <h3>Where Do You Want To Hike Today?</h3>
+  </div>
 
-  <body>
-        <!-- <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a> -->
-    
- 
-    <div class="page-header">
-      <h1>HIKE FINDER <small>Where Do You Want To Hike Today?</small></h1>
-    </div>
-    
-    {% if "current_user" in session %}
-      <form action="/logout">
-          <input type="submit" value="Logout">
-      </form>
-    {% else %}
-      <form action="/login">
-          <input type="submit" value="Login">
-      </form>
-    {% endif %}
+  <hr>
 
+  {% for message in get_flashed_messages() %}
+    <li> {{ message }}</li>
+  {% endfor %}
 
     <hr>
 
-    {% for message in get_flashed_messages() %}
-      <li> {{ message }}</li>
-    {% endfor %}
+  <div id="map"></div>
 
-    <hr>
+  {% block content %} put your content here {% endblock %}
 
-    <div id="map"></div>
 
-    {% block content %} put your content here {% endblock %}
-
- 
-
-  </body>
+</body>
 </html>
