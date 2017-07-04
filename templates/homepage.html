@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <div class="input-group">
-      <form action="/local-hikes">
-        <input id="address" name="address" type="text" class="form-control" placeholder="Enter Address">
-        <input id="distance" name="distance" type="text" class="form-control" placeholder="Search Radius - optional">
-        <button id="submit" type="submit" value="Go">Go!</button>
-      </form>
-    </div>
+
+  <form action="/local-hikes">
+    <input id="address" name="address" type="text" placeholder="Enter Address">
+    <input id="distance" name="distance" type="text" placeholder="Search Radius - optional">
+    <button id="submit" type="submit">Go!</button>
+  </form>
 
 
 <script async defer

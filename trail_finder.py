@@ -12,6 +12,7 @@ def get_geocode(address):
         })
 
     geocode_result = r.json()
+
     latitude = geocode_result["results"][0]["geometry"]["location"]["lat"]
     longitude = geocode_result["results"][0]["geometry"]["location"]["lng"]
 
@@ -29,6 +30,7 @@ def get_list_of_trails(latitude, longitude, distance=10):
     trails = r.json()
 
     dict_of_trails = {}
+    dict_of_lat_lng = {}
 
     for trail in trails:
         name = trail['name']
@@ -37,6 +39,7 @@ def get_list_of_trails(latitude, longitude, distance=10):
         description = trail['description']
         park_name = trail['park_name']
         trail_id = trail['id']
+        dict_of_lat_lng[trail_id] = [latitude, longitude]
         dict_of_trails[name] = [name, latitude, longitude, description, park_name, trail_id]
 
-    return dict_of_trails
+    return [dict_of_trails, dict_of_lat_lng]

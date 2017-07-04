@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import os
 from jinja2 import StrictUndefined
 from flask_debugtoolbar import DebugToolbarExtension
@@ -25,13 +25,13 @@ def get_local_hikes():
 
     latitude, longitude = get_geocode(address)
 
-    dict_of_trails = get_list_of_trails(latitude, longitude, distance)
+    dict_of_trails, dict_of_lat_lng = get_list_of_trails(latitude, longitude, distance)
 
-    return render_template("list_of_hikes.html",
-                           dict_of_trails=dict_of_trails,
-                           lat=latitude,
-                           lng=longitude)
-
+    # return render_template("list_of_hikes.html",
+    #                        dict_of_trails=dict_of_trails,
+    #                        lat=latitude,
+    #                        lng=longitude)
+    return jsonify(dict_of_trails)
 
 
 
