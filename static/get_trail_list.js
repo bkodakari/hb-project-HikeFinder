@@ -2,11 +2,15 @@ $('#submit').on('click', getList);
 
 function getList(evt){
   evt.preventDefault();
+  document.getElementById('json_of_hikes').innerHTML = ('');
   var formInputs = {
     'address':$('#address').val(),
     'distance':$('#distance').val()};
-  $.get('/local-hikes', formInputs, loadListOfHikes);
+  $.get('/local-hikes.json', formInputs, loadListOfHikes);
+  console.log(formInputs);
 }
+
+//need intermediate check for data before calling loadListOfHikes... if no data, flash message.
 
 function loadListOfHikes(data){
   var arrayTrailNames = [];
@@ -37,7 +41,7 @@ function loadListOfHikes(data){
   for (var l=0; l < arrayTrailLatLng.length; l++){
     var marker = new google.maps.Marker({
     position: arrayTrailLatLng[l],
-    title:"Hello World!"
+    title: arrayTrailNames[l],
   });
   marker.setMap(map);
   }

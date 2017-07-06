@@ -18,7 +18,7 @@ def index():
     return render_template("homepage.html")
 
 
-@app.route("/local-hikes")
+@app.route("/local-hikes.json")
 def get_local_hikes():
     address = request.args.get("address")
     distance = request.args.get("distance")
@@ -27,12 +27,10 @@ def get_local_hikes():
 
     dict_of_trails, dict_of_lat_lng = get_list_of_trails(latitude, longitude, distance)
 
-    # return render_template("list_of_hikes.html",
-    #                        dict_of_trails=dict_of_trails,
-    #                        lat=latitude,
-    #                        lng=longitude)
-    return jsonify(dict_of_trails)
-
+    if dict_of_trails:
+        return jsonify(dict_of_trails)
+    else:
+        return jsonify()
 
 
 
